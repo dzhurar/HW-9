@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     const saveBtn = document.getElementById('saveBtn');
 
 
-    let userData = JSON.parse(localStorage.getItem(userData)) || [];
+    let userData = JSON.parse(localStorage.getItem('userData')) || [];
     saveBtn.addEventListener('click', () =>{
         const naming = username.value.trim();
         const password = userPassword.value.trim();

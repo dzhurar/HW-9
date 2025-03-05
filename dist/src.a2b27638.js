@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var username = document.getElementById('username');
   var userPassword = document.getElementById('password');
   var saveBtn = document.getElementById('saveBtn');
-  var userData = JSON.parse(localStorage.getItem(userData)) || [];
+  var userData = JSON.parse(localStorage.getItem('userData')) || [];
   saveBtn.addEventListener('click', function () {
     var naming = username.value.trim();
     var password = userPassword.value.trim();
@@ -205,7 +205,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51918" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58238" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
